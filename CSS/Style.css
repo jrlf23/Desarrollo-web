@@ -1,111 +1,88 @@
+html
+{
+    font-size: 20px;
+}
+
 body
 {
-    font-family: "Roboto", sans-serif;
-    background-color: #f9fafb;
-    color: "2c3e50";
-    line-height: 1.6;
+    color: #fcfcfc;
+    background-color: #355664;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.main-title 
+h1
 {
-    font-family: 'Montserrat', sans-serif;
-    
-    color: #298069;
-    
-    font-size: 3em; 
-    
-    text-align: center;
-    
+    font-size: 2rem;
+}
+
+h2
+{
+    font-size: 1.2rem;
+}
+
+h3
+{
+    font-size: 1rem;
+}
+
+/*¿Qué tamaño en pixeles tienen
+los h1, h2, h3 y el texto del footer?*/
+/*H1=40px*/
+/*H2=24*/
+/*H3=20*/
+
+footer
+{
+    background-color: black;
+    color: white;
+    font-size: 0.7rem;
     margin-top: 20px;
-}
-
-.subtitle 
-{
-    font-family: "Montserrat", sans-serif;
-    color: #2980b9;
-    font-size: 3em;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.intro-text
-{
-    font-size: 1.2em;
-    color: #34495e;
+    padding: 5px;
     text-align: center;
 }
 
-.country-section
+div.wrapper
 {
-    font-family: "Roboto",sans-serif;
-    text-align: center;
-    margin-top: 30px;
-}
-
-.country-imagen
-{
-    width: 80%;
-    max-width: 500px;
-    height: auto;
-    display: block;
     margin: 0 auto;
-}
-
-.country-section h3
-{
-    color: #e74c3c;
-    font-size: 1.8em;
-    margin-bottom: 5px;
-}
-
-.country-section p
-{
-    font-size: 1em;
-    color: #2c3e50;
     width: 80%;
-    margin: 0 auto 20px auto;
+}
+
+section article
+{
+    background-color: rgb(33, 62, 74,1);
+    margin-top: 20px;
+    padding: 12px;
+}
+
+section article p
+{
+    font-size: 0.8rem;
     text-align: justify;
 }
 
-a
+nav span a
 {
-    color: #8e44ad;
-    text-decoration: none;
-    font-weight: 700;
-}
-
-a:hover
-{
-    color: #9b59b6;
-    text-decoration: underline;
-}
-
-.country-table
-{
-    width: 90%;
-    margin: 20px auto;
-    border-collapse: collapse;
-}
-
-.country-table th, .country-table td
-{
-    border: 1px solid #ddd;
+    background-color: white;
+    border-right: 1px solid;
+    color: black;
+    font-size: 0.6rem;
+    float: left;
     padding: 10px;
-    text-align: center;
+    text-decoration: none;
 }
 
-.country-table th
+nav span a:hover
 {
-    background-color: #3498db;
-    color: white;
-    font-weight: bold;
+    background-color: #B2DFDB;
 }
 
-.footer-text
+article p::first-letter
 {
-    font-size: 1.1em;
-    text-align: center;
-    margin-top: 20px;
-    color: #7f8c8d;
-    font-family: "Montsserat",sans-serif;
+    color: gold;
+    font-size: 1.5rem;
+}
+
+section article:first-of-type p::first-line 
+{
+    text-decoration: underline;
 }
