@@ -51,7 +51,7 @@ const aumentarLetra = function () {
     for (let index = 0;  index < titulos.length; index++) {
         titulos[index].style.fontSize = `${contadorAumentar}em`;
     }
-};
+}; 
 
 let contadorDisminuir = 1;
 const disminuirLetra = function () {
