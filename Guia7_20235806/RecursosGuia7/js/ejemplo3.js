@@ -42,28 +42,28 @@ const cambiarColorParrafos = function (colorSeleccionado) {
 let contadorAumentar = 1;
 const aumentarLetra = function () {
     contadorAumentar += 0.005;
-    document.body.style.fontSize = ${contadorAumentar}em;
+    document.body.style.fontSize = `${contadorAumentar}em`;
     const parrafos = document.querySelectorAll("p");
     for (let index = 0;  index < titulos.length; index++) {
-        parrafos[index].style.fontSize = ${contadorAumentar}em;
+        parrafos[index].style.fontSize = `${contadorAumentar}em`;
     }
     const titulos = document.querySelectorAll("h1");
     for (let index = 0;  index < titulos.length; index++) {
-        titulos[index].style.fontSize = ${contadorAumentar}em;
+        titulos[index].style.fontSize = `${contadorAumentar}em`;
     }
 };
 
 let contadorDisminuir = 1;
 const disminuirLetra = function () {
     contadorDisminuir -= 0.005;
-    document.body.style.fontSize = ${contadorDisminuir}em;
+    document.body.style.fontSize = `${contadorDisminuir}em`;
     const parrafos = document.querySelectorAll("p");
     for (let index = 0;  index < titulos.length; index++) {
-        parrafos[index].style.fontSize = ${contadorDisminuir}em;
+        parrafos[index].style.fontSize = `${contadorDisminuir}em`;
     }
     const titulos = document.querySelectorAll("h1");
     for (let index = 0;  index < titulos.length; index++) {
-        titulos[index].style.fontSize = ${contadorDisminuir}em;
+        titulos[index].style.fontSize = `${contadorDisminuir}em`;
     }
 };
 
