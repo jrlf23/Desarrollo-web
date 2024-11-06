@@ -1,4 +1,3 @@
-//inicializando primer color de fondo en el input color
 const primerColorFondo = function (event) {
     document.body.style.backgroundColor = event.target.value;
 };
@@ -7,7 +6,6 @@ const cambiarColorFondo = function (color) {
     document.body.style.backgroundColor = color;
 };
 
-//funciones para modificar el color de los titulos
 const primerColorTitulos = function (event) {
     let colorSeleccionado = event.target.value;
     const titulos = document.querySelectorAll("h1");
@@ -23,7 +21,6 @@ const cambiarColorTitulos = function (colorSeleccionado) {
     }
 };
 
-//funciones para modificar el color de los parrafos
 const primerColorParrafos = function (event) {
     let colorSeleccionado = event.target.value;
     const parrafos = document.querySelectorAll("p");
@@ -68,28 +65,24 @@ const disminuirLetra = function () {
 };
 
 const starDOM = () => {
-    //obteniendo la referencia del boton cambiar fondo
     const buttonFondo = document.getElementById("idFondo");
     buttonFondo.value ="#ffffff";
     buttonFondo.addEventListener("input", primerColorFondo, false);
     buttonFondo.addEventListener("change", cambiarColorFondo, false);
     buttonFondo.select();
 
-    //obteniendo la referencia del boton cambiar color de titulos
     const buttonTitulos = document.getElementById("idTitulos");
     buttonTitulos.value ="#000000";
     buttonTitulos.addEventListener("input", primerColorTitulos, false);
     buttonTitulos.addEventListener("change", cambiarColorTitulos, false);
     buttonTitulos.select();
 
-    //obteniendo la referencia del boton cambiar color de parrafos
     const buttonParrafos = document.getElementById("idParrafos");
     buttonParrafos.value ="#000000";
     buttonParrafos.addEventListener("input", primerColorParrafos, false);
     buttonParrafos.addEventListener("change", cambiarColorParrafos, false);
     buttonParrafos.select();
 
-    //obteniendo referencia a los botones
     const buttonAumentar = document.getElementById("idBtnAumentar");
     const buttonDisminuir = document.getElementById("idBtnDisminuir");
 
